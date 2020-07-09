@@ -54,7 +54,9 @@
           для вашего бизнеса
         </h1>
         <div>
-          <button class="button" type="button">Заказать услугу</button>
+          <button data-modal-open class="button" type="button">
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!--Функции-->
@@ -431,8 +433,40 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
-      <div class="modal"></div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form class="form">
+          <p class="modal-title">
+            <b>Оставьте свои данные, мы вам перезвоним</b>
+          </p>
+          <div class="form-field">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label for="mail">Почта</label>
+            <input type="email" name="mail" id="mail" />
+          </div>
+          <div class="comment">
+            <label for="comment">Комментарий</label>
+            <textarea name="comment" id="comment" rows="10"></textarea>
+          </div>
+          <div class="agreement">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="">Условия договора</a></label
+            >
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+        <button data-modal-close>Закрыть</button>
+      </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
