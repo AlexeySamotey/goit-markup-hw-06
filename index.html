@@ -440,20 +440,59 @@
             <b>Оставьте свои данные, мы вам перезвоним</b>
           </p>
           <div class="form-field">
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="name" />
+            <input
+              type="text"
+              class="form-input"
+              name="name"
+              id="name"
+              placeholder=" "
+            />
+            <label for="name" class="form-label">Имя</label>
+            <span class="form-icon"
+              ><svg class="modal-icon">
+                <use href="./img/sprite.svg#name"></use>
+              </svg>
+            </span>
           </div>
           <div class="form-field">
-            <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
+            <input
+              type="tel"
+              class="form-input"
+              name="tel"
+              id="tel"
+              placeholder=" "
+            />
+            <label for="tel" class="form-label">Телефон</label>
+            <span class="form-icon"
+              ><svg class="modal-icon">
+                <use href="./img/sprite.svg#tel"></use>
+              </svg>
+            </span>
           </div>
           <div class="form-field">
-            <label for="mail">Почта</label>
-            <input type="email" name="mail" id="mail" />
+            <input
+              type="email"
+              class="form-input"
+              name="mail"
+              id="mail"
+              placeholder=" "
+            />
+            <label for="mail" class="form-label">Почта</label>
+            <span class="form-icon"
+              ><svg class="modal-icon">
+                <use href="./img/sprite.svg#mail"></use>
+              </svg>
+            </span>
           </div>
           <div class="comment">
-            <label for="comment">Комментарий</label>
-            <textarea name="comment" id="comment" rows="10"></textarea>
+            <textarea
+              class="form-area"
+              name="comment"
+              id="comment"
+              rows="6"
+              placeholder=" "
+            ></textarea>
+            <label for="comment" class="form-label-area">Комментарий</label>
           </div>
           <div class="agreement">
             <input type="checkbox" name="policy" id="policy" />
@@ -462,9 +501,13 @@
               <a href="">Условия договора</a></label
             >
           </div>
-          <button type="submit">Отправить</button>
+          <button type="submit" class="button">Отправить</button>
         </form>
-        <button data-modal-close>Закрыть</button>
+        <button data-modal-close class="close-btn">
+          <svg class="close-button">
+            <use href="./img/sprite.svg#close"></use>
+          </svg>
+        </button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
